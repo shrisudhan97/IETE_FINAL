@@ -1,0 +1,421 @@
+
+.college-header{
+   position: cover;
+   height: 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   margin-bottom: 10px;
+   filter: brightness(50%); /* Dims the background */
+    z-index: -1; /* Sends background behind the content */
+}
+.body{    
+    
+   background: url(../Images/kongu-3.jpg);
+  
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   
+      font-family: sudhan10;
+    z-index: -1; /* Sends background behind the content */
+    height: 300px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    color: white;
+}
+.title h3{
+    margin-left: 20px;
+}
+
+.header{
+   height: 150px;
+   width: 100%;
+   background-color: rgb(56, 56, 118);
+   display: flex;
+   gap: 7rem;
+   text-align: center;
+   align-items: center;
+   
+   
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.header h1{
+    font-size: 43px;
+    color: aliceblue;
+    margin-left:70px;
+    font-family: sudhan;
+}
+.sideimagelower{
+    height: 60px;
+    background-color: rgb(132, 130, 130);
+    display: flex;
+    gap: 40px;  
+    
+}
+.abovefooter{
+    overflow: hidden;
+    height: 635px;
+    overflow-y: scroll;
+}
+.footer{
+    width: 1550px;
+    height: 330px;
+    background-color: rgb(193, 188, 188);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+tr:hover{
+    color: rgb(250, 250, 244);
+}
+.footerimage{
+    width: 200px;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+@font-face {
+    font-family: sudhan;
+    src:url(../Fonts/PlayfairDisplay-Regular.ttf)
+}
+*{
+    font-family: sudhan;
+    border: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: sudhan1;
+    src: url(../Raleway-Regular.ttf);
+}
+button{
+    width:200px;
+    height: 60px;
+    border: none;
+    font-size: large;
+    border-radius: 20px;
+    background-color: rgb(56, 56, 118);
+    color: white;
+    font-family: sudhan2;
+    transition: transform 0.1s ease-in-out;
+}
+p{
+    font-family: sudhan1;
+}
+.abovefooter{
+    padding: 0%;
+    margin: 0%;
+ 
+}
+img{
+    height:150px;
+    width:150px;
+}
+.card-container{
+    padding: 20px;  
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for layering */
+    width: 500px;
+    height: 300px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensures text color is white */
+    overflow: hidden; /* Prevents overflow of pseudo-element */
+    font-family: sudhan2;
+    border-radius: 10px;
+}
+
+.card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZnw-D3jVot_iKF5yX3riDvbnXrXaN68BhJQ&s');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Dims the background */
+    z-index: -1; /* Sends background behind the content */
+}
+
+.card1 h1, .card1 p {
+    position: relative; /* Keeps text above the background */
+    z-index: 1; /* Ensures text is above the dimmed background */
+    margin: 5px;
+    font-family: sudhan2;
+    font-size: 30px;
+}
+@font-face {
+    font-family: sudhan2;
+    src: url(Raleway-SemiBold.ttf);
+}
+p{
+    font-family: sudhan1;
+}
+
+button:hover{
+    transform: scale(1.1) ;
+    background-color: white;
+    color: rgb(20, 20, 95);
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for layering */
+    width: 500px;
+    height: 300px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensures text color is white */
+    overflow: hidden; /* Prevents overflow of pseudo-element */
+    font-family: sudhan2;
+    border-radius: 10px;
+}
+
+.card2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(../Images/project.avif);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Dims the background */
+    z-index: -1; /* Sends background behind the content */
+}
+
+.card2 h1, .card2 p {
+    position: relative; /* Keeps text above the background */
+    z-index: 1; /* Ensures text is above the dimmed background */
+    margin: 5px;
+    font-family: sudhan2;
+    font-size: 30px;
+}
+.instruction{
+    width: 500px;
+    height: 430px;
+    background-color: rgb(248, 247, 247);
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(19, 19, 86);
+    color: white;
+    
+}
+.instruction h2{
+    font-family: sudhan3;
+    font-weight: 1000;
+    padding: 20px;
+    
+}
+@font-face {
+    font-family: sudhan3;
+    src:url(../Raleway-Bold.ttf);
+}
+.abovefooter::-webkit-scrollbar{
+    display: none;
+}
+a{
+    color: aliceblue;
+    font-family: sudhan2;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(18, 18, 70);
+}
+li{
+    font-family: sudhan1;
+    padding:0;
+    gap: 10px;
+    
+}
+ul{
+    padding-right: 40px;
+}
+.iete{
+    margin-left: 85px;
+}
+@font-face {
+    font-family: sudhan9;
+    src: url(../Fonts/Pervitina-Dex-FFP.ttf);
+}
+@font-face {
+    font-family: sudhan10;
+    src: url(../Fonts/AIRBORNE_GP.ttf);
+}
+.instruct {
+    margin-left: 200px;
+    background-color: rgb(19, 19, 86);
+    width: 500px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.line{
+    height: 5px;
+    width: 230px;
+    background-color: red;
+}
+.abovecard{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: 300px;
+}
+.abovecard img{
+    width: 900px;
+    height: 600px;
+}.abovecard img:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out; /* Slows down the scaling effect */
+}
+
+/* General Styles for Mobile */
+@media (max-width: 768px) {
+    /* Adjust Header */
+    .header {
+        flex-direction: column; /* Stack items */
+        height: auto;
+        padding: 10px;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .header img {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    /* Adjust Body */
+    .body {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .body h1 {
+        font-size: 20px;
+    }
+    .abovecard{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Instruction Box */
+    .instruct {
+        width: 90%;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    /* Instruction List */
+    ul {
+        padding: 0;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    /* Card Container */
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card1, .card2 {
+        width: 90%; /* Take full width */
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+
+    .footer .address, .footer .phone {
+        font-size: 14px;
+    }
+
+  
+
+    .instruction h2 {
+        font-size: 18px;
+    }
+
+    /* Image Adjustments */
+    .abovecard img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust Buttons */
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    /* Hide horizontal scrollbar */
+    .abovefooter {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    /* Center Align Content */
+    .card1 h1, .card1 p, .card2 h1, .card2 p {
+        text-align: center;
+    }
+}
+
